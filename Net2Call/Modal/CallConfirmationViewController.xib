@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CallConfirmationViewController" customModule="Net2Call" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelBtn" destination="ocp-6q-84H" id="FCr-W8-CyW"/>
+                <outlet property="confirmBtn" destination="fRc-UJ-zoo" id="ysD-l9-7dW"/>
+                <outlet property="contentView" destination="kKd-sb-MNW" id="3Ud-mO-gLL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kKd-sb-MNW">
+                    <rect key="frame" x="20" y="252.5" width="335" height="162"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anda Yakin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4L-ZS-fYM">
+                            <rect key="frame" x="125" y="10" width="85" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menghubungi contact service kami" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gc6-fz-gVn">
+                            <rect key="frame" x="20" y="71" width="295" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRc-UJ-zoo">
+                            <rect key="frame" x="20" y="112" width="134" height="30"/>
+                            <color key="backgroundColor" red="0.062745098039215685" green="0.17254901960784313" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="IIA-dI-WRZ"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Iya">
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="confirmTap:" destination="-1" eventType="touchUpInside" id="EfC-3Y-PBY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocp-6q-84H">
+                            <rect key="frame" x="181" y="112" width="134" height="30"/>
+                            <color key="backgroundColor" red="0.63791120050000005" green="0.17989343399999999" blue="0.25489681959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Db0-mJ-88I"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Tidak">
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="cancelTap:" destination="-1" eventType="touchUpInside" id="JEj-hg-hS8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.098039215686274508" green="0.45098039215686275" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="gc6-fz-gVn" firstAttribute="top" secondItem="P4L-ZS-fYM" secondAttribute="bottom" constant="40" id="2lm-C2-mey"/>
+                        <constraint firstItem="fRc-UJ-zoo" firstAttribute="leading" secondItem="kKd-sb-MNW" secondAttribute="leading" constant="20" id="9hA-1U-DQo"/>
+                        <constraint firstItem="ocp-6q-84H" firstAttribute="width" secondItem="kKd-sb-MNW" secondAttribute="width" multiplier="0.4" id="Bic-E0-fun"/>
+                        <constraint firstAttribute="bottom" secondItem="ocp-6q-84H" secondAttribute="bottom" constant="20" id="FEN-X7-fAH"/>
+                        <constraint firstAttribute="bottom" secondItem="fRc-UJ-zoo" secondAttribute="bottom" constant="20" id="G4E-An-EfK"/>
+                        <constraint firstItem="fRc-UJ-zoo" firstAttribute="width" secondItem="kKd-sb-MNW" secondAttribute="width" multiplier="0.4" id="KCJ-Fz-qjo"/>
+                        <constraint firstItem="P4L-ZS-fYM" firstAttribute="top" secondItem="kKd-sb-MNW" secondAttribute="top" constant="10" id="Mqk-uO-REK"/>
+                        <constraint firstItem="gc6-fz-gVn" firstAttribute="leading" secondItem="kKd-sb-MNW" secondAttribute="leading" constant="20" id="TIp-5D-Hgz"/>
+                        <constraint firstItem="fRc-UJ-zoo" firstAttribute="top" secondItem="gc6-fz-gVn" secondAttribute="bottom" constant="20" id="llc-Ct-Atz"/>
+                        <constraint firstAttribute="trailing" secondItem="ocp-6q-84H" secondAttribute="trailing" constant="20" id="ouc-OU-jHl"/>
+                        <constraint firstItem="P4L-ZS-fYM" firstAttribute="centerX" secondItem="kKd-sb-MNW" secondAttribute="centerX" id="p8S-Hi-lJF"/>
+                        <constraint firstAttribute="trailing" secondItem="gc6-fz-gVn" secondAttribute="trailing" constant="20" id="x48-u5-leB"/>
+                        <constraint firstItem="ocp-6q-84H" firstAttribute="top" secondItem="gc6-fz-gVn" secondAttribute="bottom" constant="20" id="xYC-8M-6Df"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kKd-sb-MNW" secondAttribute="trailing" constant="20" id="YAo-p3-lNn"/>
+                <constraint firstItem="kKd-sb-MNW" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="beo-Yg-trf"/>
+                <constraint firstItem="kKd-sb-MNW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="xqx-O1-rAk"/>
+            </constraints>
+            <point key="canvasLocation" x="-19" y="20"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F05D94F2C8526FE0034FE6A /* CallConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F05D94D2C8526FE0034FE6A /* CallConfirmationViewController.swift */; };
+		8F05D9502C8526FE0034FE6A /* CallConfirmationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F05D94E2C8526FE0034FE6A /* CallConfirmationViewController.xib */; };
+		8F2FBC8F2C5109D900334D83 /* DialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2FBC8D2C5109D900334D83 /* DialViewController.swift */; };
+		8F2FBC902C5109D900334D83 /* DialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F2FBC8E2C5109D900334D83 /* DialViewController.xib */; };
+		8F2FBC962C55382F00334D83 /* IncomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2FBC942C55382E00334D83 /* IncomingViewController.swift */; };
+		8F2FBC972C55382F00334D83 /* IncomingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F2FBC952C55382E00334D83 /* IncomingViewController.xib */; };
+		8F2FBC9B2C55E21C00334D83 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2FBC9A2C55E21C00334D83 /* UIView+Extension.swift */; };
+		8F2FBCA22C56766800334D83 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2FBCA12C56766800334D83 /* BaseViewController.swift */; };
+		8F628E032C4FBEF5003AE2DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F628E022C4FBEF5003AE2DE /* AppDelegate.swift */; };
+		8F628E052C4FBEF5003AE2DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F628E042C4FBEF5003AE2DE /* SceneDelegate.swift */; };
+		8F628E072C4FBEF5003AE2DE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F628E062C4FBEF5003AE2DE /* MainViewController.swift */; };
+		8F628E0A2C4FBEF5003AE2DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F628E082C4FBEF5003AE2DE /* Main.storyboard */; };
+		8F628E0C2C4FBEF8003AE2DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F628E0B2C4FBEF8003AE2DE /* Assets.xcassets */; };
+		8F628E0F2C4FBEF8003AE2DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F628E0D2C4FBEF8003AE2DE /* LaunchScreen.storyboard */; };
+		8F628E1D2C4FF350003AE2DE /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F628E1B2C4FF350003AE2DE /* CallViewController.swift */; };
+		8F628E1E2C4FF350003AE2DE /* CallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F628E1C2C4FF350003AE2DE /* CallViewController.xib */; };
+		8F88C5B32C5C8E8C00A28DA8 /* DTMFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F88C5B12C5C8E8C00A28DA8 /* DTMFViewController.swift */; };
+		8F88C5B42C5C8E8C00A28DA8 /* DTMFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F88C5B22C5C8E8C00A28DA8 /* DTMFViewController.xib */; };
+		A55E676101FBE82C2D10E4C0 /* Pods_Net2Call.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E41D73B6E4595784157C98C /* Pods_Net2Call.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E41D73B6E4595784157C98C /* Pods_Net2Call.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Net2Call.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FCBCB3CA8E3DB495849733C /* Pods-Net2Call.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Net2Call.debug.xcconfig"; path = "Target Support Files/Pods-Net2Call/Pods-Net2Call.debug.xcconfig"; sourceTree = "<group>"; };
+		8F05D94D2C8526FE0034FE6A /* CallConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallConfirmationViewController.swift; sourceTree = "<group>"; };
+		8F05D94E2C8526FE0034FE6A /* CallConfirmationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallConfirmationViewController.xib; sourceTree = "<group>"; };
+		8F2D8D1D2C807A6800A1DEF5 /* Net2CallSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Net2CallSDK.xcframework; path = ../Net2CallSDK/Net2CallSDK.xcframework; sourceTree = "<group>"; };
+		8F2FBC8D2C5109D900334D83 /* DialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialViewController.swift; sourceTree = "<group>"; };
+		8F2FBC8E2C5109D900334D83 /* DialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DialViewController.xib; sourceTree = "<group>"; };
+		8F2FBC942C55382E00334D83 /* IncomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingViewController.swift; sourceTree = "<group>"; };
+		8F2FBC952C55382E00334D83 /* IncomingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IncomingViewController.xib; sourceTree = "<group>"; };
+		8F2FBC9A2C55E21C00334D83 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		8F2FBCA12C56766800334D83 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8F628DFF2C4FBEF5003AE2DE /* Net2Call.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Net2Call.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F628E022C4FBEF5003AE2DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F628E042C4FBEF5003AE2DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8F628E062C4FBEF5003AE2DE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8F628E092C4FBEF5003AE2DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F628E0B2C4FBEF8003AE2DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F628E0E2C4FBEF8003AE2DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F628E102C4FBEF8003AE2DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F628E1B2C4FF350003AE2DE /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		8F628E1C2C4FF350003AE2DE /* CallViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallViewController.xib; sourceTree = "<group>"; };
+		8F88C5B12C5C8E8C00A28DA8 /* DTMFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTMFViewController.swift; sourceTree = "<group>"; };
+		8F88C5B22C5C8E8C00A28DA8 /* DTMFViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DTMFViewController.xib; sourceTree = "<group>"; };
+		F38AB76E29342797CCCC91F7 /* Pods-Net2Call.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Net2Call.release.xcconfig"; path = "Target Support Files/Pods-Net2Call/Pods-Net2Call.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F628DFC2C4FBEF5003AE2DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A55E676101FBE82C2D10E4C0 /* Pods_Net2Call.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E53BA48E4AF6B916FA085A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FCBCB3CA8E3DB495849733C /* Pods-Net2Call.debug.xcconfig */,
+				F38AB76E29342797CCCC91F7 /* Pods-Net2Call.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8F05D94C2C8525EE0034FE6A /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				8F05D94D2C8526FE0034FE6A /* CallConfirmationViewController.swift */,
+				8F05D94E2C8526FE0034FE6A /* CallConfirmationViewController.xib */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		8F2FBC992C55E20B00334D83 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8F2FBC9A2C55E21C00334D83 /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8F6162FA2C7CB1900099F577 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F2D8D1D2C807A6800A1DEF5 /* Net2CallSDK.xcframework */,
+				2E41D73B6E4595784157C98C /* Pods_Net2Call.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F628DF62C4FBEF5003AE2DE = {
+			isa = PBXGroup;
+			children = (
+				8F628E012C4FBEF5003AE2DE /* Net2Call */,
+				8F628E002C4FBEF5003AE2DE /* Products */,
+				2E53BA48E4AF6B916FA085A7 /* Pods */,
+				8F6162FA2C7CB1900099F577 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8F628E002C4FBEF5003AE2DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F628DFF2C4FBEF5003AE2DE /* Net2Call.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F628E012C4FBEF5003AE2DE /* Net2Call */ = {
+			isa = PBXGroup;
+			children = (
+				8F05D94C2C8525EE0034FE6A /* Modal */,
+				8F2FBC992C55E20B00334D83 /* Extension */,
+				8F628E1F2C4FF356003AE2DE /* SubView */,
+				8F628E022C4FBEF5003AE2DE /* AppDelegate.swift */,
+				8F628E042C4FBEF5003AE2DE /* SceneDelegate.swift */,
+				8F628E062C4FBEF5003AE2DE /* MainViewController.swift */,
+				8F2FBCA12C56766800334D83 /* BaseViewController.swift */,
+				8F628E082C4FBEF5003AE2DE /* Main.storyboard */,
+				8F628E0B2C4FBEF8003AE2DE /* Assets.xcassets */,
+				8F628E0D2C4FBEF8003AE2DE /* LaunchScreen.storyboard */,
+				8F628E102C4FBEF8003AE2DE /* Info.plist */,
+			);
+			path = Net2Call;
+			sourceTree = "<group>";
+		};
+		8F628E1F2C4FF356003AE2DE /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				8F628E1B2C4FF350003AE2DE /* CallViewController.swift */,
+				8F628E1C2C4FF350003AE2DE /* CallViewController.xib */,
+				8F2FBC8D2C5109D900334D83 /* DialViewController.swift */,
+				8F2FBC8E2C5109D900334D83 /* DialViewController.xib */,
+				8F2FBC942C55382E00334D83 /* IncomingViewController.swift */,
+				8F2FBC952C55382E00334D83 /* IncomingViewController.xib */,
+				8F88C5B12C5C8E8C00A28DA8 /* DTMFViewController.swift */,
+				8F88C5B22C5C8E8C00A28DA8 /* DTMFViewController.xib */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F628DFE2C4FBEF5003AE2DE /* Net2Call */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F628E132C4FBEF8003AE2DE /* Build configuration list for PBXNativeTarget "Net2Call" */;
+			buildPhases = (
+				8C1C734B3FEEA72E2D50D91A /* [CP] Check Pods Manifest.lock */,
+				8F628DFB2C4FBEF5003AE2DE /* Sources */,
+				8F628DFC2C4FBEF5003AE2DE /* Frameworks */,
+				8F628DFD2C4FBEF5003AE2DE /* Resources */,
+				2D3649E0C26B86FCBC75D8E9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Net2Call;
+			productName = Net2Call;
+			productReference = 8F628DFF2C4FBEF5003AE2DE /* Net2Call.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F628DF72C4FBEF5003AE2DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					8F628DFE2C4FBEF5003AE2DE = {
+						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
+					};
+				};
+			};
+			buildConfigurationList = 8F628DFA2C4FBEF5003AE2DE /* Build configuration list for PBXProject "Net2Call" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F628DF62C4FBEF5003AE2DE;
+			productRefGroup = 8F628E002C4FBEF5003AE2DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F628DFE2C4FBEF5003AE2DE /* Net2Call */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F628DFD2C4FBEF5003AE2DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F628E0F2C4FBEF8003AE2DE /* LaunchScreen.storyboard in Resources */,
+				8F88C5B42C5C8E8C00A28DA8 /* DTMFViewController.xib in Resources */,
+				8F628E0C2C4FBEF8003AE2DE /* Assets.xcassets in Resources */,
+				8F05D9502C8526FE0034FE6A /* CallConfirmationViewController.xib in Resources */,
+				8F628E1E2C4FF350003AE2DE /* CallViewController.xib in Resources */,
+				8F2FBC902C5109D900334D83 /* DialViewController.xib in Resources */,
+				8F2FBC972C55382F00334D83 /* IncomingViewController.xib in Resources */,
+				8F628E0A2C4FBEF5003AE2DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D3649E0C26B86FCBC75D8E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Net2Call/Pods-Net2Call-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Net2Call/Pods-Net2Call-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Net2Call/Pods-Net2Call-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C1C734B3FEEA72E2D50D91A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Net2Call-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F628DFB2C4FBEF5003AE2DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F628E1D2C4FF350003AE2DE /* CallViewController.swift in Sources */,
+				8F88C5B32C5C8E8C00A28DA8 /* DTMFViewController.swift in Sources */,
+				8F628E072C4FBEF5003AE2DE /* MainViewController.swift in Sources */,
+				8F628E032C4FBEF5003AE2DE /* AppDelegate.swift in Sources */,
+				8F2FBCA22C56766800334D83 /* BaseViewController.swift in Sources */,
+				8F2FBC8F2C5109D900334D83 /* DialViewController.swift in Sources */,
+				8F2FBC9B2C55E21C00334D83 /* UIView+Extension.swift in Sources */,
+				8F2FBC962C55382F00334D83 /* IncomingViewController.swift in Sources */,
+				8F628E052C4FBEF5003AE2DE /* SceneDelegate.swift in Sources */,
+				8F05D94F2C8526FE0034FE6A /* CallConfirmationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8F628E082C4FBEF5003AE2DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F628E092C4FBEF5003AE2DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8F628E0D2C4FBEF8003AE2DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F628E0E2C4FBEF8003AE2DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F628E112C4FBEF8003AE2DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F628E122C4FBEF8003AE2DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F628E142C4FBEF8003AE2DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FCBCB3CA8E3DB495849733C /* Pods-Net2Call.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = JU6V85QGK8;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Net2Call/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone access";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atlasat.ios.net2call;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F628E152C4FBEF8003AE2DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F38AB76E29342797CCCC91F7 /* Pods-Net2Call.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = JU6V85QGK8;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Net2Call/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone access";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atlasat.ios.net2call;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F628DFA2C4FBEF5003AE2DE /* Build configuration list for PBXProject "Net2Call" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F628E112C4FBEF8003AE2DE /* Debug */,
+				8F628E122C4FBEF8003AE2DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F628E132C4FBEF8003AE2DE /* Build configuration list for PBXNativeTarget "Net2Call" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F628E142C4FBEF8003AE2DE /* Debug */,
+				8F628E152C4FBEF8003AE2DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F628DF72C4FBEF5003AE2DE /* Project object */;
+}

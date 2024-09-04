@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Net2Call" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UB5-7r-i5H">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_icon" translatesAutoresizingMaskIntoConstraints="NO" id="PV9-ee-h4b">
+                                <rect key="frame" x="111.66666666666669" y="261" width="170" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="UeT-Jy-cYv"/>
+                                    <constraint firstAttribute="height" constant="170" id="hpm-mK-3q0"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Rrg-dH-wgf">
+                                <rect key="frame" x="166.66666666666666" y="481" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7s9-DB-Vh7"/>
+                                    <constraint firstAttribute="width" constant="60" id="V0r-Ep-UNx"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dial_active" translatesAutoresizingMaskIntoConstraints="NO" id="fRX-0j-nku">
+                                <rect key="frame" x="313" y="772" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Vkh-nZ-QfE"/>
+                                    <constraint firstAttribute="width" constant="50" id="qR2-jt-HUx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="65t-3v-ScE"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rrg-dH-wgf" firstAttribute="centerX" secondItem="UB5-7r-i5H" secondAttribute="centerX" id="4Mq-aY-HTS"/>
+                            <constraint firstAttribute="bottom" secondItem="fRX-0j-nku" secondAttribute="bottom" constant="30" id="CHg-50-qEP"/>
+                            <constraint firstItem="Rrg-dH-wgf" firstAttribute="top" secondItem="PV9-ee-h4b" secondAttribute="bottom" constant="50" id="Hxx-vu-w1J"/>
+                            <constraint firstItem="PV9-ee-h4b" firstAttribute="centerY" secondItem="UB5-7r-i5H" secondAttribute="centerY" constant="-80" id="N6h-wD-lQx"/>
+                            <constraint firstItem="PV9-ee-h4b" firstAttribute="centerX" secondItem="UB5-7r-i5H" secondAttribute="centerX" id="UI5-AB-AiF"/>
+                            <constraint firstItem="65t-3v-ScE" firstAttribute="trailing" secondItem="fRX-0j-nku" secondAttribute="trailing" constant="30" id="d5k-P2-O8M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="callImageView" destination="Rrg-dH-wgf" id="46A-HC-Vxc"/>
+                        <outlet property="dialImageView" destination="fRX-0j-nku" id="hhR-G6-12d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="27" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="call_icon" width="42.666667938232422" height="42.666667938232422"/>
+        <image name="dial_active" width="42.666667938232422" height="42.666667938232422"/>
+        <image name="logo_icon" width="166.66667175292969" height="166.66667175292969"/>
+    </resources>
+</document>

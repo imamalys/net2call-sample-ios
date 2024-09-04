@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IncomingViewController" customModule="Net2Call" customModuleProvider="target">
+            <connections>
+                <outlet property="acceptImageView" destination="YXd-mc-PDR" id="8nb-Dp-jF0"/>
+                <outlet property="callerIDLabel" destination="3G7-gt-e1i" id="RQo-GK-MSA"/>
+                <outlet property="endImageView" destination="Ifd-BP-MTi" id="cV1-5u-4nE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incoming Call" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2T-ui-fla">
+                    <rect key="frame" x="137.33333333333334" y="201" width="118.33333333333334" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3G7-gt-e1i">
+                    <rect key="frame" x="196.66666666666666" y="235" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_icon" translatesAutoresizingMaskIntoConstraints="NO" id="YXd-mc-PDR">
+                    <rect key="frame" x="259.66666666666669" y="689.33333333333337" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="CZE-kQ-wXr"/>
+                        <constraint firstAttribute="height" constant="70" id="qbo-Lw-rt7"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="end_call_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Ifd-BP-MTi">
+                    <rect key="frame" x="63.333333333333343" y="689.33333333333337" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="0hc-Cy-PgO"/>
+                        <constraint firstAttribute="height" constant="70" id="X8k-9r-cpe"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.062745098039215685" green="0.17254901960784313" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="r2T-ui-fla" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.5" id="0I1-yP-YX5"/>
+                <constraint firstItem="YXd-mc-PDR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="1.5" id="3vf-Fo-EfO"/>
+                <constraint firstItem="r2T-ui-fla" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MHG-TW-6dx"/>
+                <constraint firstItem="Ifd-BP-MTi" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.7" id="Wzq-S8-rKe"/>
+                <constraint firstItem="YXd-mc-PDR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.7" id="bBc-FA-eu6"/>
+                <constraint firstItem="3G7-gt-e1i" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bNO-8I-Hag"/>
+                <constraint firstItem="Ifd-BP-MTi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="0.5" id="nor-G2-RjY"/>
+                <constraint firstItem="3G7-gt-e1i" firstAttribute="top" secondItem="r2T-ui-fla" secondAttribute="bottom" constant="10" id="zCs-TW-f1r"/>
+            </constraints>
+            <point key="canvasLocation" x="19" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="call_icon" width="42.666667938232422" height="42.666667938232422"/>
+        <image name="end_call_icon" width="42.666667938232422" height="42.666667938232422"/>
+    </resources>
+</document>
